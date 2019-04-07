@@ -10,8 +10,88 @@ body {
     font-family: 'Droid Sans', sans-serif
 }
 
-
 /* End Global Rules */
+
+/* Start Navigation Bar */
+
+.navbar .icon {
+    padding: 9px;
+    border: 1px solid #333;
+    border-radius: 10%;
+    cursor: pointer;
+}
+
+.navbar .logo {
+    display: block;
+    font-weight: bold;
+    background-color: #00AEEF;
+    padding: 15px;
+    color: #FFF;
+    font-size: 20px
+}
+
+.navbar .links {
+    text-align: center
+}
+
+.navbar .links ul li {
+    display: inline-block;
+    font-size: 20px;
+}
+.navbar .links ul li a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px;
+    color: #333
+}
+
+.navbar .links ul li.active a {
+    background-color: #00AEEF;
+    color: #FFF
+}
+
+@media (max-width : 767px) {
+    .navbar .links ul li {
+        display: block;
+        font-size: 15px
+    }
+    .navbar .links ul li a {
+        display: block;
+    }
+
+    .navbar .faicon {
+        overflow: hidden
+    }
+    .navbar .links {
+        margin-top: 20px
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .navbar .links ul li {
+        display: block;
+        font-size: 18px
+    }
+    .navbar .links ul li a {
+        display: block;
+    }
+
+    .navbar .faicon {
+        overflow: hidden
+    }
+    .navbar .links {
+        margin-top: 20px
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar .icon {
+        display: none
+    }
+}
+
+/* End Navigation Bar */
 
 /* Start Header */
 
