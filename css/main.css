@@ -7,8 +7,7 @@
 }
 
 body {
-    font-family: 'Droid Sans', sans-serif;
-    height: 3000px
+    font-family: 'Droid Sans', sans-serif
 }
 
 
@@ -264,6 +263,37 @@ body {
     border-radius: 10px
 }
 
+.they-say .person-say .avatar {
+    width: 120px;
+    margin-right: 20px
+}
+
+.they-say .person-say h3 {
+    margin: 0 0 10px
+}
+
+.they-say .person-say p {
+    margin: 0;
+    line-height: 1.7;
+    width: calc(100% - 140px)
+}
+
+@media (max-width: 767px){
+    .they-say .person-say .avatar {
+        float: none;
+        margin: auto
+    }
+    .they-say .person-say h3 {
+        float: none;
+        text-align: center
+    }
+    .they-say .person-say p {
+        float: none;
+        width: 100%;
+        text-align: center
+    }
+}
+
 @media (min-width: 768px) {
     .they-say .person-say:first-of-type {
         width: 100%
@@ -276,6 +306,22 @@ body {
     }
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+    .they-say .person-say:not(:first-of-type) .avatar {
+        float: none;
+        margin: auto
+    }
+    .they-say .person-say:not(:first-of-type) h3 {
+        float: none;
+        text-align: center
+    }
+    .they-say .person-say:not(:first-of-type) p {
+        float: none;
+        width: 100%;
+        text-align: center
+    }
+}
+
 @media (min-width: 992px) {
     .they-say .person-say:first-of-type {
         width: 80%;
@@ -283,19 +329,85 @@ body {
     }
 }
 
-.they-say .person-say h3 {
-    margin: 0 0 10px
-}
-
-.they-say .person-say p {
-    margin: 0;
-    line-height: 2
-}
-
 /* End What They Say */
 
+/* Start Information */
+
+.information {
+    background-color: #ECECEC;
+    padding: 30px 0;
+    font-size: 18px
+}
+
+.information .h1 {
+    font-size: 50px;
+    color: #848484
+}
+
+.information .info-list li {
+    display: inline-block;
+    background-color: #DDD;
+    padding: 15px;
+    font-size: 22px;
+    cursor: pointer
+}
+
+.information .info-list li.selected {
+    background-color: #FFF;
+    color: #22A9BD
+}
+
+.information .info-content {
+    margin-bottom: 30px
+}
+
+.information .info-content > div {
+    padding: 20px;
+    background-color: #FFF;
+    line-height: 2 
+}
+
+.information .info-content > div:not(:first-child) {
+    display: none
+}
+
+@media (max-width: 767px) {
+    .information .info-list li {
+        display: block
+    }
+}
+
+/* End Inforamtion */
+
+/* Start Footer */
+
+.footer {
+    background-color: #333;
+    color: #EEE
+}
+
+.footer .copyright,
+.footer .design {
+    padding: 20px;
+    text-align: center
+}
+
+@media (max-width: 767px) {
+    .footer .copyright,
+    .footer .design {
+        width: 100%
+    }
+}
+
+@media (min-width: 768px) {
+    .footer .copyright,
+    .footer .design {
+        width: 50%
+    }
+}
 
 
+/* End Footer */
 /* Mobile && Tablet Rules */
 @media (max-width: 767px) {
     .visible-xs {
@@ -399,6 +511,16 @@ body {
     margin: 0;
     padding: 0;
     list-style: none
+}
+
+.img-circle {
+    border-radius: 50%
+}
+
+.img-thumbnail {
+    padding: 3px;
+    background-color: #FFF;
+    border: 1px solid #CCC
 }
 
 /* End Framework */
